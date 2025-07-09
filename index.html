@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Parth Web Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <a href="/">Parth Tiwari</a>
+      <nav>
+        <a target="_blank" href="https://github.com/Parth424-blip"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/parth-tiwari-a407912ba/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="intro-header">
+          <h1>Hello! I'm Parth</h1>
+          <p>Software Developer</p>
+        </div>
+        <h5 class="intro-description">
+          A passionate web developer. Based in India, I love to play video
+          games, workout and build web applications
+        </h5>
+        <div class="links-container">
+          <i class="fa-solid link-arrow fa-arrow-right"></i>
+          <a target="_blank" href="mailto:tiwariparth339@gmail.com">
+            Email me</a
+          >
+          <a target="_blank" href="https://github.com/Parth424-blip">Github</a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/parth-tiwari-a407912ba/"
+            >Linkedin</a
+          >
+        </div>
+        <div id="play-game">
+          <button onclick="playGame()">Play game??</button>
+        </div>
+        <div style="display: none" class="color-div">
+          <h4>Pick a color</h4>
+          <p style="display: none">Great... now its ruined!</p>
+          <input
+            type="color"
+            id="color-picker"
+            onchange="changeColor()"
+            value="#0084ff"
+          />
+
+          <button style="display: none" onclick="resetColor()">Reset</button>
+        </div>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Javascript</td>
+              <td>ReacJS | React Native | NextJS | NodeJS & ExpressJS</td>
+            </tr>
+            <tr>
+              <td>Web</td>
+              <td>TailwindCSS | FantaCSS | Firebase | PostGreSQL | GIT |</td>
+            </tr>
+            <tr>
+              <td>Design</td>
+              <td>Canvas | Pixir</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Latest Projects</h2>
+        <div class="cards-grid">
+          <div class="project-card">
+            <div>
+              <p>Jan 19, 2025</p>
+              <h4>Brogram</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FantaCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Javascript</p>
+                </div>
+              </div>
+              <p>The Simple 30 Workout Plan</p>
+              <div class="project-links">
+                <a target="_blank" href="https://brogram123.netlify.app/"
+                  >Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/Parth424-blip/BroGram"
+                  >Github</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img class="big-img" src="./public/brogram.png" alt="thumbnail" />
+            </div>
+          </div>
+          <div class="project-card">
+            <div>
+              <p>June 19, 2025</p>
+              <h4>SmolStore</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FantaCss</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Stripe</p>
+                </div>
+              </div>
+              <p>An E-commerce store made with NextJS and Stripe</p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  href="https://smol-store-mgspkfmye-parth424-blips-projects.vercel.app/"
+                  >Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/Parth424-blip/SmolStore"
+                  >Github</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="./public/smolstore.png"
+                alt="thumbnail"
+              />
+            </div>
+          </div>
+          <div class="project-card">
+            <div>
+              <h4>Password Manager</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>TailwindCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>ExpressJS</p>
+                </div>
+              </div>
+              <p>
+                A full stack app to store and manage user passwords with CRUD
+                features. Includes search, filter, and clipboard copy
+                functionality through a responsive UI
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="https://passwordmange.netlify.app/"
+                  >Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/Parth424-blip/Password_Managerp"
+                  >Github</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="./public/paswordmanager.png"
+                alt="thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        By <a href="">Path Tiwari</a> the repo on
+        <a target="_blank" href="https://github.com/Parth424-blip">Github</a>
+      </p>
+    </footer>
+
+    <script>
+      const body = document.querySelector("body");
+      const colorInput = document.getElementById("color-picker");
+      const colorDiv = document.querySelector(".color-div");
+      const hiddenText = document.querySelector(".color-div p");
+      const resetBtn = document.querySelector(".color-div button");
+      const playBtn = document.getElementById("play-game");
+
+      function playGame() {
+        colorDiv.style.display = "block";
+        playBtn.style.display = "none";
+      }
+
+      function changeColor() {
+        const selectedColor = colorInput.value;
+        body.style.background = selectedColor;
+        resetBtn.style.display = "block";
+        hiddenText.style.display = "block";
+        colorInput.style.display = "none";
+      }
+
+      function resetColor() {
+        body.style.background = "white";
+        colorInput.style.display = "block";
+        playBtn.style.display = "block";
+
+        hiddenText.style.display = "none";
+        resetBtn.style.display = "none";
+        colorDiv.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
